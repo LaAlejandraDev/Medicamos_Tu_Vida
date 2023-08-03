@@ -1,0 +1,123 @@
+<!--Modulo de Gestion de clientes-->
+<link rel="stylesheet" href="../../style/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+<div class="container-fluid row d-flex justify-content-center m-2">
+    <div class="card col-lg-12 m-2 p-4 shadow p-3 mb-5 rounded">
+        <h2 class="text-center">Gestión de Clientes</h2>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <label for="txtNombre" class="mt-2 "><strong>Nombre</strong></label><br>
+                <input id="txtNombre" type="text" class="mt-2 w-100">
+            </div>
+            <div class="col-md-4">
+                <label for="txtApt" class="mt-2 "><strong>Apellido Paterno</strong></label><br>
+                <input id="txtApt" type="text" class="mt-2 w-100">
+            </div>
+            <div class="col-md-4">
+                <label for="txtAmt" class="mt-2 "><strong>Apellido Materno</strong></label><br>
+                <input id="txtAmt" type="text" class="mt-2 w-100">
+            </div>
+            <div class="col-md-4">
+                <label for="txtgn" class="mt-2 "><strong>Genero</strong></label><br>
+                <input id="txtgn" type="text" class="mt-2 w-100">
+            </div>
+            <div class="col-md-4">
+                <label for="txtFnac" class="mt-2 "><strong>Fecha de Nacimiento</strong></label><br>
+                <input id="txtFnac" type="text" class="mt-2 w-100">
+            </div>
+            <div class="col-md-4">
+                <label for="txtRFC" class="mt-2 "><strong>RFC</strong></label><br>
+                <input id="txtRFC" type="text" class="mt-2 w-100">
+            </div>
+            <div class="col-md-4">
+                <label for="txtCURP" class="mt-2 "><strong>CURP</strong></label><br>
+                <input id="txtCURP" type="text" class="mt-2 w-100">
+            </div>
+            <div class="col-md-4">
+                <label for="txtDmc" class="mt-2 "><strong>Domicilio</strong></label><br>
+                <input id="txtDmc" type="text" class="mt-2 w-100">
+            </div>
+            <div class="col-md-4">
+                <label for="txtCP" class="mt-2 "><strong>Codigo Postal</strong></label><br>
+                <input id="txtCP" type="text" class="mt-2 w-100">
+            </div>
+            <div class="col-md-4">
+                <label for="txtCiu" class="mt-2 "><strong>Ciudad</strong></label><br>
+                <input id="txtCiu" type="text" class="mt-2 w-100">
+            </div>
+            <div class="col-md-4">
+                <label for="txtEDO" class="mt-2 "><strong>Estado</strong></label><br>
+                <input id="txtEDO" type="text" class="mt-2 w-100">
+            </div>
+            <div class="col-md-4">
+                <label for="txtTel" class="mt-2 "><strong>Telefono</strong></label><br>
+                <input id="txtTel" type="text" class="mt-2 w-100">
+            </div>
+            <div class="col-md-4">
+                <label for="imgAdd" class="mt-2 "><strong>Foto</strong></label><br>
+                <img id="previewImage" src="" alt="Imagen seleccionada"
+                    style="max-width: 300px; max-height: 300px; margin-top: 10px; display: none;">
+                <input id="imgAdd" name="imgAdd" type="file" class="mt-2 w-100">
+
+
+
+
+
+
+
+
+            </div>
+
+
+            <div class="d-flex justify-content-around mt-2">
+                <button class="mt-2 btn btn-success btn-lg" onclick="moduloClientes.addClientes();"
+                    id="btnAdd">Registrar</button>
+                <button class="mt-2 btn btn-info btn-lg" onclick="moduloClientes.clean();"
+                    id="btnClean">Limpiar</button>
+                <button class="mt-2 btn btn-warning btn-lg disabled" onclick="moduloClientes.updateClientes();"
+                    id="btnUpdate">Modificar</button>
+                <button class="mt-2 btn btn-danger btn-lg disabled" onclick="moduloClientes.deleteClientes();"
+                    id="btnDelete">Eliminar</button>
+            </div>
+        </div>
+
+        <div class="card col-lg-12  p-4 m-2 shadow mb-5 rounded table-responsive-xxl">
+            <div class="d-flex m-3">
+                <label for="txtBusquedaCliente" class="form-label mx-3">Buscar Clientes </label>
+                <input type="text" id="txtBusquedaCliente">
+                <button class="btn btn-primary mx-2" onclick="moduloClientes.loadTabla();">Buscar</button>
+            </div>
+            <table class="table table-hover">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido Paterno</th>
+                        <th>Apellido Materno</th>
+                        <th>Genero</th>
+                        <th>Fecha de Nacimiento</th>
+                        <th>RFC</th>
+                        <th>CURP</th>
+                        <th>Domicilio</th>
+                        <th>Codigo Postal</th>
+                        <th>Ciudad</th>
+                        <th>Estado</th>
+                        <th>Telefono</th>
+                        <th>Foto</th>
+                    </tr>
+                </thead>
+                <tbody id="tblClientes">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+

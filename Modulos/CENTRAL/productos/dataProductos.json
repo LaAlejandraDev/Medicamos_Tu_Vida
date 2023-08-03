@@ -1,0 +1,50 @@
+[
+    {
+        "nombre":"Aspirina",
+        "nombreGene":"Ácido acetilsalicílico",
+        "formaFarma":"Comprimida",
+        "unidadMe":"500 gm",
+        "presenta":"Tabletas",
+        "princiInca":"Baja la fiebre y alivia el dolor de cabeza",
+        "contraIndi":"Hipersinsibilidad, alergia al tinte de tartrazina",
+        "concentra":"mg",
+        "unidades":"50",
+        "precio":"$45.50",
+        "foto":"imagen1.png",
+        "ruta":"",
+        "codigoBarras":"8470007110231",
+        "estatus":"Activo"
+    },
+    {
+        "nombre":"Voltaren",
+        "nombreGene":"Diclofenaco",
+        "formaFarma":"Inyectable",
+        "unidadMe":"75 mg",
+        "presenta":"Ampolletas",
+        "princiInca":"Analgésico, antiinflamatorio, antirreumático",
+        "contraIndi":"Hipersinsibilidad, alergia al tinte de tartrazina",
+        "concentra":"mg",
+        "unidades":"25",
+        "precio":"$756.00",
+        "foto":"imagen2.jpg",
+        "ruta":"",
+        "codigoBarras":"2500457896452",
+        "estatus":"Activo"
+    },
+    {
+        "nombre":"Actron",
+        "nombreGene":"Ibuprofeno",
+        "formaFarma":"Sólidas",
+        "unidadMe":"400 mg",
+        "presenta":"Cápsulas",
+        "princiInca":"Alivio sintomático de los dolores ocasionales leves",
+        "contraIndi":"Hipersinsibilidad, alergia al tinte de tartrazina",
+        "concentra":"mg",
+        "unidades":"30",
+        "precio":"$78.50",
+        "foto":"imagen3.jpg",
+        "ruta":"",
+        "codigoBarras":"2030508977620",
+        "estatus":"Activo"
+    }
+]

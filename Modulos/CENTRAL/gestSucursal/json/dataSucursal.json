@@ -1,0 +1,31 @@
+[
+    {
+        "Nombre_de_Sucursal": "Centro",
+        "Encargado": "Juan",
+        "Direccion": "Portal Bravo 2418, ezquina con Benito Juarez",
+        "Telefono": "4775421286",
+        "Codigo_Postal": "37680",
+        "Clave_de_Sucursal" : "200001",
+        "estatus": "Activo"
+    },
+    {
+        "Nombre_de_Sucursal": "Centro Max",
+        "Encargado": "Manuel",
+        "Direccion": "Blvd. Adolfo Lopez Mateos 2518",
+        "Telefono": "4772945736",
+        "Codigo_Postal": "37530",
+        "Clave_de_Sucursal" : "200002",
+        "estatus": "Activo"
+    
+    },
+    {
+        "Nombre_de_Sucursal": "Plaza Mayor",
+        "Encargado": "Alejandra",
+        "Direccion": "Blvd. Juan Alonso de Torres",
+        "Telefono": "477734916",
+        "Codigo_Postal": "37120",
+        "Clave_de_Sucursal" : "200003",
+        "estatus": "Activo"
+    
+    }
+]

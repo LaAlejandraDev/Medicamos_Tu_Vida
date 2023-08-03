@@ -1,0 +1,53 @@
+<!--Modulo de Gestion de clientes-->
+<link rel="stylesheet" href="../../style/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+<div class="container-fluid row d-flex justify-content-center m-2">
+    <div class="card col-lg-12 m-2 p-4 shadow p-3 mb-5 rounded">
+        <h2 class="text-center">Consulta y busqueda de productos</h2>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <label for="txtNombre" class="mt-2 "><strong>Nombre</strong></label><br>
+                <input id="txtNombre" type="text"  class="mt-2 w-100">
+            </div>
+            <div class="col-md-4">
+                <label for="txtCB" class="mt-2 "><strong>Codigo de barras</strong></label><br>
+                <input id="txtCB" type="text"  class="mt-2 w-100">
+            </div>
+            <div class="col-md-4">
+                <label for="txtPatente" class="mt-2 "><strong>Patente</strong></label><br>
+                <input id="txtPatente" type="text"   class="mt-2 w-100">
+            </div>
+            
+                
+                
+                
+                
+                
+                
+
+            </div>
+
+
+        <div class="d-flex justify-content-around mt-2">
+           
+            <button class="mt-2 btn btn-success btn-lg" onclick="moduloProductos.addProductos();" id="btnAdd">Buscar</button>
+           
+        </div>
+    </div>
+
+    <div class="card col-lg-12  p-4 m-2 shadow mb-5 rounded table-responsive-xxl">
+        <div class="d-flex m-3">
+           
+        </div>
+        <table class="table table-hover">
+            <thead class="table-primary">
+                <tr>
+                    <th>Stock</th>
+                                      
+                </tr>
+            </thead>
+            <tbody id="tblStock">
+
+            </tbody>
+        </table>
+    </div>
+</div>

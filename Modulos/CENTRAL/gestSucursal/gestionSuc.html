@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Medicamos tu Vida</title>
+        <link rel="stylesheet" href="style/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style/bootstrap-5.0.2-dist/estiloCentral.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container-fluid row d-flex justify-content-center m-3">
+            <!-- Aqui es para la creacion de las cajas de texto ( ingresar informacion) -->
+            <div class="card col-lg-5 m-2 p-4">
+                <h3 class="justify-content-center">Gestion de sucursales</h3>
+                <div class="row g-3">
+
+                    <div class="col-md-6">
+                        <label for="txtClaveUnica" class="mt-2">Clave de sucursal</label><!-- comment -->
+                        <input id="txtClaveUnica" type="text" class="mt-2">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="txtNomSuc" class="mt-2">Nombre de sucursal</label><!-- comment -->
+                        <input id="txtNomSuc" type="text" class="mt-2">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="txtNomEncargado" class="mt-2">Encargado</label><!-- comment -->
+                        <input id="txtNomEncargado" type="text" class="mt-2">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="txtDireccion" class="mt-2">Dirección</label><!-- comment -->
+                        <input id="txtDireccion" type="text" class="mt-2">
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <label for="txtTel" class="mt-2">Telefono</label><!-- comment -->
+                        <input id="txtTel" type="text" class="mt-2">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="txtCP" class="mt-2">Código Postal</label><!-- comment -->
+                        <input id="txtCP" type="text" class="mt-2">
+                    </div>
+
+                    <!-- Botones -->
+                    <div class="d-flex justify-content-around mt-2">
+                        <button class="mt-2 btn btn-info btn-lg" onclick="moduloSucursal.addSucursal();" id="btnAgr">Agregar</button>
+                        <button class="mt-2 btn btn-secondary btn-lg" onclick="moduloSucursal.modificarSucursal();" id="btnMod">Modificar</button>
+                        <button class="mt-2 btn btn-danger btn-lg" onclick="moduloSucursal.eliminarSucursales();" id="btnEli">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buscar información -->
+            <div class="card col-lg-5 m-2 p-4">
+                <div class="d-flex m-3">
+                    <label for="txtBusquedaSucursal" class="form-label mx-3">Buscar Sucursales</label>
+                    <input type="text" id="txtBuscar">
+                    <button class="btn btn-secondary mx-2" onclick="moduloSucursal.loadTabla();">Buscar</button>
+                </div>
+                <table class="table table-hover">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>Nombre Sucursal</th>
+                            <th>Encargado</th>
+                            <th>Dirección</th>
+                            <th>Telefono</th>
+                            <th>Codigo Postal</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tblSucursal">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <script src="JS/ControlSucursal.js"></script>
+    </body>
+</html>

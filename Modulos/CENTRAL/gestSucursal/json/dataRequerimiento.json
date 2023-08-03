@@ -1,0 +1,41 @@
+[
+    {
+        "codigo_unico_cliente" : "100001",
+        "nombre":"Rodolfo",
+        "apellidoP":"Cortes",
+        "apellidoM":"Mendez",
+        "nacimiento":"20-12-2004",
+        "telefono":"4775421286",
+        "codigoP":"37680",
+        "curp":"COMR041120HGTRNDA3",
+        "Direccion":"Orquidea, Los lopez",
+        "estatus":"Activo",
+        "correo_electronico":"hazzaelrodolfo@gmail.com"
+    },
+    {
+        "codigo_unico_cliente" : "100002",
+        "nombre":"Braulio Yazdan",
+        "apellidoP":"Ontiveros",
+        "apellidoM":"Cortes",
+        "nacimiento":"10-09-2004",
+        "telefono":"4761447281",
+        "codigoP":"37720",
+        "curp":"ONCB0409100HGTSKDJA4",
+        "Direccion":"La Noria",
+        "estatus":"Activo",
+        "correo_electronico":"yazdanbraulio@gmail.com"
+    },
+    {
+        "codigo_unico_cliente" : "100003",
+        "nombre":"Allison Estephania",
+        "apellidoP":"Rizo",
+        "apellidoM":"Rea",
+        "nacimiento":"25-26-2004",
+        "telefono":"4779212876",
+        "codigoP":"36446",
+        "curp":"RIRA040625MGTZXLA2",
+        "Direccion":"Los olivos",
+        "estatus":"Activo",
+        "correo_electronico":"rizorea@gmail.com"
+    }
+]

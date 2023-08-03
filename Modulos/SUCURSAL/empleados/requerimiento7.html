@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicamos</title>
+    <link rel="stylesheet" href="style/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/bootstrap-5.0.2-dist/estiloSucursal.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+        <div class="container-fluid row d-flex justify-content-center">
+            <!-- Aqui es para la creacion de las cajas de texto ( ingresar informacion) -->
+            <div class="card col-lg-5 m-2 p-4">
+                <h3 class="justify-content-center">Gestion de Empleados</h3>
+                <div class="row g-3">
+                    
+                    <div class="col-md-6">
+                        <label for="txtCodigoCliente" class="mt-2">Codigo de empleado</label><!-- comment -->
+                        <input id="txtCodigoCliente" type="text" class="mt-2">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="txtNom" class="mt-2">Nombre</label><!-- comment -->
+                        <input id="txtNom" type="text" class="mt-2">
+                    </div>
+                    <br>
+                    <div class="col-md-6">
+                        <label for="txtApP" class="mt-2">Apellido Paterno</label><!-- comment -->
+                        <input id="txtApP" type="text" class="mt-2">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="txtApM" class="mt-2">Apellido Materno</label><!-- comment -->
+                        <input id="txtApM" type="text" class="mt-2">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="txtNac" class="mt-2">Nacimiento</label><!-- comment -->
+                        <input id="txtNac" type="text" class="mt-2">
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <label for="txtTel" class="mt-2">Telefono</label><!-- comment -->
+                        <input id="txtTel" type="text" class="mt-2">
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <label for="txtCP" class="mt-2">Código Postal</label><!-- comment -->
+                        <input id="txtCP" type="text" class="mt-2">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="txtDic" class="mt-2">Dirección</label><!-- comment -->
+                        <input id="txtDic" type="text" class="mt-2">
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <label for="txtCurp" class="mt-2">CURP</label><br><!-- comment -->
+                        <input id="txtCurp" type="text" class="mt-2">
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <label for="txtEmail" class="mt-2">E-mail</label><!-- comment -->
+                        <input id="txtEmail" type="text" class="mt-2">
+                    </div>
+
+                    <!-- Botones -->
+                    <div class="d-flex justify-content-around mt-2">
+                        <button class="mt-2 btn btn-info btn-lg" onclick="moduloCliente.addCliente();" id="btnAgr">Agregar</button>
+                        <button class="mt-2 btn btn-secondary btn-lg" onclick="moduloCliente.modificarCliente();" id="btnMod">Modificar</button>
+                        <button class="mt-2 btn btn-danger btn-lg" onclick="moduloCliente.eliminarCliente();" id="btnEli">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buscar información -->
+            <div class="card col-lg-6 m-6 p-3">
+                <div class="d-flex m-3">
+                    <label for="txtBusquedaSucursal" class="form-label mx-3">Buscar Sucursales</label>
+                    <input type="text" id="txtBuscar">
+                    <button class="btn btn-secondary mx-2" onclick="moduloCliente.loadTabla();">Buscar</button>
+                </div>
+                <table class="table table-hover">
+                    <thead class="table-info">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellidos</th>
+                            <th>Nacimiento</th>
+                            <th>Telefono</th>
+                            <th>Codigo Postal</th>
+                            <th>CURP</th>
+                            <th>E-mail</th>
+                            <th>Estatus</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody id="tblClientes">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        
+        <script src="JS/controlRequerimiento.js"></script>
+    </body>
+</html>

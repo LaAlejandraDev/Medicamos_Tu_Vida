@@ -1,0 +1,73 @@
+<!--Modulo de Ventas-->
+<link rel="stylesheet" href="../../style/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+<div class="container-fluid row d-flex justify-content-center m-2">
+    <div class="card col-lg-5 m-2 p-4 container-sm container-lg container-md shadow mb-5">
+        <h2 class="text-center">Gestión de Ventas</h2>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="txtVentaId" class="mt-2 ">Id Venta</label><br>
+                <input id="txtVentaId" type="text" readonly class="mt-2 w-100">
+            </div>
+            <div class="col-md-6">
+                <label for="txtProducto" class="mt-2 ">Producto</label><br>
+                <input id="txtProducto" type="text"  class="mt-2 w-100">
+            </div>
+            <div class="col-md-6">
+                <label for="txtCanti" class="mt-2 ">Cantidad</label><br>
+                <input id="txtCanti" type="text" class="mt-2 w-100">
+            </div>
+            <div class="col-md-6">
+                <label for="txtPrecio" class="mt-2 ">Precio</label><br>
+                <input id="txtPrecio" type="text"   class="mt-2 w-100">
+            </div>
+            <div class="col-md-6">
+                <label for="txtFecha" class="mt-2 ">Fecha</label><br>
+                <input id="txtFecha" type="date"   class="mt-2 w-100">
+            </div>
+            <div class="col-md-6">
+                <label for="txtHora" class="mt-2 ">Hora</label><br>
+                <input id="txtHora" type="time"   class="mt-2 w-100">
+            </div>
+            <div class="col-md-6">
+                <label for="txtEmpleado" class="mt-2 ">Nombre Empleado</label><br>
+                <input id="txtEmpleado" type="text"   class="mt-2 w-100">
+            </div>
+            <div class="col-md-6">
+                <label for="txtCliente" class="mt-2 ">Nombre Cliente</label><br>
+                <input id="txtCliente" type="text"   class="mt-2 w-100">
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-around mt-2">
+            <button class="mt-5 btn  btn-lg" onclick="moduloVentas.addVentas()" id="btnAdd" style="background-color: #038554;">Registrar</button>
+            <button class="mt-5 btn  btn-lg" onclick="moduloVentas.clean()" id="btnClean" style="background-color:#68ddbd;">Limpiar</button>
+            <button class="mt-5 btn btn-lg disabled" onclick="moduloVentas.updateVentas();" id="btnUpdate" style="background-color: yellow">Actualizar</button>
+            <button class="mt-5 btn btn-lg disabled" onclick="moduloVentas.deleteVentas()" id="btnDelete" style="background-color: #f85f5f;">Eliminar</button>
+        </div>
+    </div>
+
+    <div class="card col-lg-6  p-4 m-2 table-responsive-xxl shadow mb-5">
+        <div class="d-flex m-3">
+            <label for="txtBusquedaVentas" class="form-label mx-3">Buscar Venta: </label>
+            <input type="text" id="txtBusquedaVentas">
+            <button class="btn mx-2" onclick="moduloVentas.loadTabla();" style="background-color:rgb(110, 174, 190);">Buscar</button>
+        </div>
+        <table class="table table-hover ">
+            <thead class="table-success">
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Empleado</th>
+                    <th>Cliente</th>
+                    <th>Estátus</th>
+                </tr>
+            </thead>
+            <tbody id="tblVentas">
+
+            </tbody>
+        </table>
+    </div>
+</div>

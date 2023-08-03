@@ -1,0 +1,32 @@
+[
+    {
+        "producto":"Paracetamol",
+        "cantidad":"3",
+        "precio":"$45.50",
+        "fecha":"2023-05-07",
+        "hora":"12:10",
+        "empleado":"Alejandra",
+        "cliente":"Juan Dominguez",
+        "estatus":"Activo"
+    },
+    {
+        "producto":"Ibuprofeno",
+        "cantidad":"2",
+        "precio":"$60.20",
+        "fecha":"2023-07-20",
+        "hora":"15:30",
+        "empleado":"Alejandra",
+        "cliente":"Maria Perez",
+        "estatus":"Activo"
+    },
+    {
+        "producto":"Ampicilina",
+        "cantidad":"6",
+        "precio":"$70.50",
+        "fecha":"2023-07-02",
+        "hora":"04:30",
+        "empleado":"Alejandra",
+        "cliente":"Dulce Mendoza",
+        "estatus":"Activo"
+    }
+]

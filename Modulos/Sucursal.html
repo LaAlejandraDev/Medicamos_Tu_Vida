@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicamos tu Vida</title>
+    <script src="controllerSucursal.js"></script>
+    <link href="../img/LogoPNG.png" rel="shorcut icon">
+    <link rel="stylesheet" href="../style/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/bootstrap-5.0.2-dist/estiloSucursal.css">
+    <link rel="stylesheet" href="../style/bootstrap-5.0.2-dist/estiloC.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+    <header>
+        <!-- Barra de Naviegación -->
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm navbar-dark m-3 rounded-3">
+                <div class="container-fluid col-lg-2">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../img/LogoPNG.png" alt="Logo" width="100">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse col-lg-10" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active text-white" aria-current="page" href="Sucursal.html">Home</a>
+                        <a class="nav-link text-white" onclick="cargarModuloPedidos()">Pedidos</a>
+                        <a class="nav-link text-white" onclick="cargarModuloVentas()">Ventas</a>
+                        <a class="nav-link text-white" onclick="cargarModuloEmpleados()">Empleados</a>
+                        <a class="nav-link text-white" onclick="cargarModuloProductos()">Productos</a>
+                        <a class="nav-link text-white" onclick="cargarModuloClientes()">Clientes</a>
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <img src="../img/logout.png" alt="Logo" width="40">
+                    <a class="nav-link active text-white me-5" aria-current="page" id="enlace">Cerrar Sesión</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido* -->
+
+
+    <div id="contenedorPrincipal">
+         <!-- Contenido* -->
+
+
+    <div id="contenedorPrincipal1">
+        <div class="container-fluid text-center mt-4">
+            <h1>¡Bienvenido!</h1>
+            <h3>a Medicamos tu Vida</h3>
+        </div>
+        <div class="container-fluid col-lg-12">
+            <div class="d-flex justify-content-center align-items-center my-4" id="menu">
+                <ul class="justify-content-center align-items-center">
+                    <li>
+                        <a href="#slide1" class="rounded-circle bg-info"><-</a>
+                    </li>
+                </ul>
+                <ul class="slider">
+                    <li id="slide1" class="p-3">
+                        <div class="p-4 d-flex justify-content-between text-align-between" id="contS">
+                            <h4 class="text-center mt-4 col-md-12">Información General de la Empresa</h4>
+                            <p class="text-justify pt-5">Medicamos tu Vida S.A. es una empresa dedicada a la venta de
+                                medicamentos genéricos y de patente. Actualmente es reconocida en el mercado farmacéutico
+                                estatal,
+                                motivo por el cual ha logrado un rápido crecimiento y actualmente cuenta con tres sucursales
+                                de
+                                venta repartidas en la ciudad de León Guanajuato (Centro, Centro Max y Plaza Mayor),
+                                teniendo la
+                                oficina central (matriz) en la colonia Futurama Monterrey de esta misma ciudad. Las
+                                diferentes
+                                sucursales de la empresa, ubicadas en diferentes zonas de la ciudad, están enlazadas entre
+                                ellas y
+                                hacia la matriz, quien es la encargada de realizar el surtido de medicamentos a las
+                                sucursales. Por
+                                su parte, cada sucursal maneja de manera independiente el proceso de ventas de medicamento,
+                                así
+                                como el manejo de su propio personal.</p>
+                        </div>
+                    </li>
+                    <li id="slide2" class="p-3">
+                        <div class="p-4" id="contS">
+                            <h4 class="text-center mt-3">Misión, Visión y Valores</h4>
+                            <p class="text-justify" id="parrafo"><b>Misión:</b> Proveer medicamentos de calidad y servicios
+                                farmacéuticos confiables para mejorar la salud y el bienestar de nuestros clientes.</p>
+                            <p class="text-justify"><b>Visión:</b> Ser la farmacia líder en la región, reconocida por
+                                nuestra
+                                excelencia en productos y servicios, y por nuestro compromiso con la salud de la comunidad.
+                            </p>
+                            <p class="text-justify"><b>Valores:</b> Compromiso con la calidad, ética profesional,
+                                innovación,
+                                responsabilidad social y trabajo en equipo.</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="justify-content-center align-items-center my-auto">
+                    <li>
+                        <a href="#slide2" class="rounded-circle bg-info">-></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+    <!-- Pie de página -->
+    <footer class="p-4 mt-5">
+        <div class="footer-content">
+            <h5>Medicamos tu Vida S.A</h5>
+            <ul class="redes">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom pt-4">
+            <p>Copyright &copy;2023 Medicamos tu Vida S.A. Designed by <span>Services Programmer</span></p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
